@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="row justify-content-center column-gap-2">
+        <div class="col-12 col-lg-5 bg-info p-3 border-primary">
+            <form action="{% url 'home' %}" method="post">
+                {% csrf_token %}
+                <h4>Quadratic Solver</h4>
+                {{ form.as_p }}
+                <input type="submit" class="s" value="Solve">
+            </form>
+        </div>
+        <div class="col-12 col-lg-5 bg-success  p-3 border-primary">
+            <h4>Quadratic Solution</h4>
+        </div>
+    </div>
+    <div class="row justify-content-center m-3">
+        <div class="col-12 col-lg-6 bg-warning p-3 border-primary">
+            <h4>Quadratic Graph</h4>
+        </div>
+    </div>
+{% endblock content %}

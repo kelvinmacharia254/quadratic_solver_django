@@ -1,0 +1,6 @@
+asgiref>>=0
+Django>>=0
+django-debug-toolbar>>=0
+django-extensions>>=0
+sqlparse>>=0
+tzdata>>=0
